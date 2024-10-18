@@ -1,0 +1,120 @@
+.record_listing {
+    display: flex;
+    padding: 0.4rem 2rem 2rem 2rem;
+    width: 100%;
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: wrap;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2rem 0;
+        overflow-y: scroll;
+        margin-top: 7rem;
+    }
+
+    .petdata_display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem;
+        width: 20rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        padding: 0.3rem 0.3rem 1.5rem 0.3rem;
+
+        .image_container {
+            height: 20rem;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .text_content {
+            flex: 1;
+            padding: 0rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+            text-align: center;
+            min-height: 4.5rem;
+            justify-content: center;
+            &>div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                p:first-child {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                p:last-child {
+                    // color:
+                }
+            }
+
+            .description {
+                font-size: 15px;
+                color: gray;
+            }
+        }
+
+        .add_cart {
+            width: 70%;
+
+            button {
+                padding: 0.5rem 0;
+                width: 100%;
+                background-color: rgb(236, 218, 53);
+                border: 1px solid gray;
+                border-radius: 8px;
+                cursor: pointer;
+
+            }
+
+            button:active {
+                background: rgba(236, 218, 53, 0.5);
+            }
+        }
+    }
+
+    .viewCart_button {
+        position: absolute;
+        bottom: 30px;
+        left: 70px;
+        right: 70px;
+        padding: 0.7rem 0;
+        border-radius: 6px;
+        border: 1px solid goldenrod;
+        background-color: rgb(240, 202, 106);
+        color: rgb(41, 39, 39);
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        gap:1rem;
+        & > div {
+            position: relative;
+            .notification{
+                position: absolute;
+                top:-10px;
+                right:-8px;
+                font-size: 10px;
+                background-color: red;
+                color:white;
+                padding: 0.2rem 0.3rem;
+                border-radius: 50%;
+            }
+
+        }
+    }
+}

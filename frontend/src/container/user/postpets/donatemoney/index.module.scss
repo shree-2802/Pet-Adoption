@@ -1,0 +1,87 @@
+.cart_order {
+    height: 100vh;
+    width: 100vw;
+    background: url('https://images.unsplash.com/photo-1628527304948-06157ee3c8a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnV5fGVufDB8fDB8fHww');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .back {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .cart_access {
+        background-color: rgba(128, 116, 116, 0.5);
+        height: 45%;
+        width: 40%;
+        padding: 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            color: white;
+
+            h4 {
+                font-size: 28px;
+                font-weight: 700;
+                color: rgb(240, 169, 39);
+            }
+
+            p {
+                text-align: center;
+            }
+
+            input {
+                border-radius: 6px;
+                padding: 0.4rem 0 0.4rem 0.3rem;
+                border: 1px solid gray;
+                outline: none;
+            }
+
+            .bt_section {
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & > button{
+                    padding:0.36rem 0.8rem;
+                    background-color: goldenrod;
+                    margin-top: -1.2px;
+                    color:white;
+                    font-size: 15px;
+                    font-weight: 400;
+                    border-style: none;
+                    border-radius: 5px;
+                    margin-left: -20px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .purchase {
+            align-self: center;
+
+            button {
+                border: none;
+                box-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                background-color: goldenrod;
+                color: black;
+                padding: 0.4rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,262 @@
+.contactus {
+    background: url("https://images.unsplash.com/photo-1591561582301-7ce6588cc286?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJhYmJpdHxlbnwwfHwwfHx8MA%3D%3D");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_blur {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_content {
+            height: 55%;
+            width: 45%;
+            background-color: rgba(54, 54, 54, 0.7);
+            border-radius: 25px;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+
+            h2 {
+                font-size: 35px;
+                font-weight: 300;
+            }
+
+            &_cont {
+                display: flex;
+                flex-direction: column;
+                gap: 1.8rem;
+                align-items: center;
+                text-align: center;
+
+                .context {
+                    color: rgb(0, 183, 255);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .modal_close {
+        display: none;
+    }
+
+    .modal {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>div {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            padding: 1.6rem;
+            align-items: flex-start;
+            border-radius: 8px;
+            width: 40%;
+            position: relative;
+
+            h3 {
+                font-size: 35px;
+                color: gray;
+                margin-bottom: 0.2rem;
+            }
+
+            input {
+                padding: 0.4rem;
+                border-radius: 0.2rem;
+                border: 1px solid gray;
+                outline: none;
+            }
+
+            &>button {
+                background-color: green;
+                padding: 0.4rem 1rem;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                border-style: none;
+                border-radius: 5px;
+                align-self: flex-end;
+                cursor: pointer;
+            }
+
+            & textarea {
+                padding: 0.5rem;
+                resize: none;
+                outline: none;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .cross_icon {
+        position: absolute;
+        top: -15px;
+        background-color: red;
+        right: -15px;
+        border: 1px solid white;
+        padding: 0.1rem;
+        border-radius: 60px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .message {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        height: 28rem;
+        width: 24rem;
+        background-color: white;
+        border-radius: 10px;
+        padding: 1rem;
+
+        .main_msg {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .message_content {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            .mess {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                margin-bottom: 0.8rem;
+                height: 19rem;
+
+                .mess_inner_cont {
+
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    overflow-y: scroll;
+                    gap: 1rem;
+
+                    &>div {
+                        position: relative;
+                        border: 1px solid gray;
+                        padding: 0.8rem;
+                        width: 11rem;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.3rem;
+
+                        .box_cust {
+                            position: absolute;
+                            right: 10px;
+                            top: 10px;
+                            background-color: rgb(107, 208, 241);
+                            padding: 0.2rem 0.3rem;
+                            border-radius: 50%;
+                            font-size: 12px;
+                            cursor: pointer;
+                        }
+
+                        &>h3 {
+                            font-size: 12px;
+                            font-weight: 600;
+                            max-width: 8rem;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                        }
+
+                        p {
+                            font-size: 13px;
+                            text-wrap: wrap;
+                        }
+
+                        p:last-child {
+                            align-self: flex-end;
+                        }
+                    }
+
+                    .my_chat {
+                        align-self: flex-end;
+                        background-color: rgb(230, 240, 243);
+                    }
+                }
+
+
+            }
+        }
+
+        &_sending {
+            width: 100%;
+            height: 2rem;
+            border-radius: 6px;
+            border: 1px solid gray;
+
+            &>div {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: stretch;
+                justify-content: space-between;
+                border-radius: 8px;
+
+                button {
+                    width: 10%;
+                    border: none;
+                    background-color: rgb(56, 56, 219);
+                    color: white;
+                    border-radius: 0 6px 6px 0;
+                }
+
+                .box_cust {
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    font-size: 15px;
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 50%;
+                    background-color: rgb(206, 127, 127);
+                    cursor: pointer;
+                }
+
+                .box_doct {
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    font-size: 15px;
+                    padding: 0.2rem 0.4rem;
+                    border-radius: 50%;
+                    background-color: green;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            textarea {
+                resize: none;
+                height: 100%;
+                width: 90%;
+                border: none;
+                outline: none;
+                border-radius: 8px;
+                padding: 0.3rem;
+            }
+        }
+    }
+}
